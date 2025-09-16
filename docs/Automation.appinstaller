@@ -9,7 +9,7 @@
       Publisher="CN=MyCompany"
       Version="1.0.0.0"
       ProcessorArchitecture="x64"
-      Uri="https://GeorgiPavlov89.github.io/automation/Automation"/>
+      Uri="https://GeorgiPavlov89.github.io/automation/Automation_MSIX.msix"/>
 
   <UpdateSettings>
     <OnLaunch HoursBetweenUpdateChecks="4" ShowPrompt="false" UpdateBlocksActivation="true"/>
