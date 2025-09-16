@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+    xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
+    Version="1.0.0.0"
+    Uri="https://GeorgiPavlov89.github.io/automation/Automation.appinstaller">
+
+  <MainPackage
+      Name="MyCompany.Automation"
+      Publisher="CN=MyCompany"
+      Version="1.0.0.0"
+      ProcessorArchitecture="x64"
+      Uri="https://GeorgiPavlov89.github.io/automation/Automation"/>
+
+  <UpdateSettings>
+    <OnLaunch HoursBetweenUpdateChecks="4" ShowPrompt="false" UpdateBlocksActivation="true"/>
+    <AutomaticBackgroundTask/>
+  </UpdateSettings>
+</AppInstaller>
