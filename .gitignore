@@ -1,0 +1,12 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.spec
+
+# Windows / редактори
+Thumbs.db
+*.log
+.vscode/
