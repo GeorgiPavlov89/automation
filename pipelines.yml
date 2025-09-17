@@ -1,0 +1,27 @@
+use: daily_main
+
+pipelines:
+  daily_main:
+    - task: automation.tasks.paths:get_desktop_dir
+      mode: raw
+      result_key: desktop
+
+    - task: automation.tasks.credentials:list_automation_credentials
+      mode: raw
+      result_key: credentials
+
+    - task: automation.tasks.excel_reader:read_cases
+      mode: raw
+      kwargs: { path: "{desktop}\\Робот-Дела\\Reports_Order.xls" }
+      result_key: cases
+
+    - task: automation.tasks.stamp:stamp_dir
+      mode: raw
+      kwargs:
+      in_dir: "{desktop}\\Робот-Дела\\BNB"
+      out_dir: "{desktop}\\Робот-Дела\\BNB\\Stamped"
+      page_index: 0
+      as_image: true
+      debug_frame: false
+      result_key: stamp
+
