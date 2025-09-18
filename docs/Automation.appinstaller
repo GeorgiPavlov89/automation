@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AppInstaller
-  xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2"
-  xmlns:s4="http://schemas.microsoft.com/appx/appinstaller/2021"
+  xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
   Version="1.0.3.0"
   Uri="https://georgipavlov89.github.io/automation/Automation.appinstaller">
 
@@ -13,9 +12,11 @@
     Uri="https://georgipavlov89.github.io/automation/MyAutomation_1.0.3.0_x64.msix" />
 
   <UpdateSettings>
-    <OnLaunch s4:HoursBetweenUpdateChecks="4"
-              s4:ShowPrompt="false"
-              s4:UpdateBlocksActivation="true"/>
-    <s4:AutomaticBackgroundTask/>
+    <!-- A) UI с блокиране до ъпдейт -->
+    <!-- <OnLaunch HoursBetweenUpdateChecks="0" ShowPrompt="true" UpdateBlocksActivation="true"/> -->
+
+    <!-- Б) Тихи ъпдейти при старт (без блокиране) -->
+    <OnLaunch HoursBetweenUpdateChecks="4" ShowPrompt="false"/>
+    <AutomaticBackgroundTask/>
   </UpdateSettings>
 </AppInstaller>
