@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AppInstaller
   xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
-  Version="1.0.3.0"
+  Version="1.0.4.0"
   Uri="https://georgipavlov89.github.io/automation/Automation.appinstaller">
 
   <MainPackage
     Name="MyAutomation"
     Publisher="CN=MyCompany"
-    Version="1.0.3.0"
+    Version="1.0.4.0"
     ProcessorArchitecture="x64"
-    Uri="https://georgipavlov89.github.io/automation/MyAutomation_1.0.3.0_x64.msix" />
+    Uri="https://georgipavlov89.github.io/automation/MyAutomation_1.0.4.0_x64.msix" />
 
   <UpdateSettings>
     <!-- A) UI с блокиране до ъпдейт -->
