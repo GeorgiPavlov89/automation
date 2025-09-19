@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AppInstaller
-  xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
-  Version="1.0.4.1"
-  Uri="https://georgipavlov89.github.io/automation/Automation.appinstaller">
+<AppInstaller xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
+              Version="1.0.4.6"
+              Uri="https://georgipavlov89.github.io/automation/Automation.appinstaller">
 
   <MainPackage
     Name="MyAutomation"
@@ -14,7 +13,5 @@
   <UpdateSettings>
     <OnLaunch HoursBetweenUpdateChecks="0" ShowPrompt="true"/>
     <AutomaticBackgroundTask/>
-    <!-- По желание, ако искаш да разрешиш и downgrade:
-    <ForceUpdateFromAnyVersion/> -->
   </UpdateSettings>
 </AppInstaller>
